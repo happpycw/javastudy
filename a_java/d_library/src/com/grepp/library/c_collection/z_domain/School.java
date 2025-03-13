@@ -1,6 +1,6 @@
 package com.grepp.library.c_collection.z_domain;
 
-import java.util.Collections;
+import java.util.Objects;
 
 public class School implements Comparable<School> {
 
@@ -13,8 +13,6 @@ public class School implements Comparable<School> {
         this.address = address;
         this.level = level;
     }
-
-
 
     @Override
     public String toString() {
@@ -35,15 +33,26 @@ public class School implements Comparable<School> {
     @Override
     public int compareTo(School o) {
         // 0. 학교레벨을 기준으로 내림차순 정렬
-        // return o.level - this.level
         // 1. 학교명으로 오름차순(a,b,c)  정렬될 수 있도록 기준을 변경
-        // return this.name.compareTo(o.name);
         // 2. 학교레벨로 오름차순 정렬하되, 만약 레벨이 같다면 학교명으로 내림차순 정렬(ㅎ,ㅍ,ㅌ)
-//        if(this.level != o.level){
-//            return this.level - o.level;
-//        }
-//        return o.name.compareTo(this.name);
-
         return this.level - o.level;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof School school)) {
+            return false;
+        }
+        return Objects.equals(name, school.name) && Objects.equals(address,
+            school.address) && Objects.equals(level, school.level);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, address, level);
+    }
+
+    public String getName() {
+        return this.name;
     }
 }

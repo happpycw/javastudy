@@ -5,6 +5,7 @@ import com.grepp.library.c_collection.b_list.grepp._List;
 import com.grepp.library.c_collection.z_domain.School;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -14,13 +15,12 @@ public class Run {
         // NOTE B01 : CRUD
         // 데이터를 조작하는 방법
         // Create, Read, Update, Delete
-         // pracAdd();
-         // pracGet();
-         // pracSet();
-         // pracRemove();
-         // pracSort();
-         // practIterable();
-
+         //pracAdd();
+         //pracGet();
+         //pracSet();
+         //pracRemove();
+         //pracSort();
+        practIterable();
     }
 
     private static void practIterable() {
@@ -29,13 +29,13 @@ public class Run {
             list.add(i);
         }
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println(list.get(i));
-        }
-
-//        for(Integer i : list){
-//            System.out.println(i);
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println(list.get(i));
 //        }
+
+        for(Integer i : list){
+            System.out.println(i);
+        }
     }
 
     private static void pracSort() {
@@ -113,6 +113,4 @@ public class Run {
 
         System.out.println("\n==================================");
     }
-
-
 }
