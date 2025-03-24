@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4d6e310c-e369-4da4-a827-342619321898" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/beckend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/beckend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../a_java/b_oop/src/com/grepp/oop/g_inner/AnonymousAbstractClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../a_java/b_oop/src/com/grepp/oop/g_inner/AnonymousAbstractClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../a_java/b_oop/src/com/grepp/oop/h_lambda/function/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../a_java/b_oop/src/com/grepp/oop/h_lambda/function/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../a_java/b_oop/src/com/grepp/oop/h_lambda/function/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../a_java/b_oop/src/com/grepp/oop/h_lambda/function/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../a_java/b_oop/src/com/grepp/oop/h_lambda/function/Predicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../a_java/b_oop/src/com/grepp/oop/h_lambda/function/Predicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../a_java/b_oop/src/com/grepp/oop/h_lambda/function/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../a_java/b_oop/src/com/grepp/oop/h_lambda/function/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../a_java/d_library/src/com/grepp/library/g_io/base/C_FileWR.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../a_java/d_library/src/com/grepp/library/g_io/base/C_FileWR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../a_java/d_library/src/com/grepp/library/g_io/filter/B_bufferedWR.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../a_java/d_library/src/com/grepp/library/g_io/filter/B_bufferedWR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/b_oop/com/grepp/oop/h_lambda/function/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/b_oop/com/grepp/oop/h_lambda/function/Consumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/b_oop/com/grepp/oop/h_lambda/function/Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/b_oop/com/grepp/oop/h_lambda/function/Function.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/b_oop/com/grepp/oop/h_lambda/function/Predicate.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/b_oop/com/grepp/oop/h_lambda/function/Predicate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/b_oop/com/grepp/oop/h_lambda/function/Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/b_oop/com/grepp/oop/h_lambda/function/Supplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/beckend/com/grepp/library/f_stream/b_stream/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/beckend/com/grepp/library/f_stream/b_stream/Run.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/beckend/com/grepp/library/g_io/base/A_file.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/beckend/com/grepp/library/g_io/base/A_file.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2ukVGPnNEgaoG2RzKylHFrZWSPO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/backend/c_jdbc/a_jdbc",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.39" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.39" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d6e310c-e369-4da4-a827-342619321898" name="Changes" comment="" />
+      <created>1742792464609</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742792464609</updated>
+      <workItem from="1742792465682" duration="5606000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

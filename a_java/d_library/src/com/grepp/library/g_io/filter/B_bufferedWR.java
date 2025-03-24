@@ -41,10 +41,7 @@ public class B_bufferedWR {
         String filename = sc.nextLine();
         System.out.print("내용 : ");
         String content = sc.nextLine();
-        
-        // NOTE GB04
-        // try with resource 문
-        // try(AutoClosable 변수 선언) {} catch - finally
+
         try(BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) {
             writer.write(content);
         } catch (IOException e) {
