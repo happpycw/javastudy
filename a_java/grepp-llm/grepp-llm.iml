@@ -10,7 +10,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../outlive/core-3.5.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../lib/core-3.5.3.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +19,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../outlive/gson-2.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../lib/gson-2.12.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,7 +28,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../outlive/javase-3.5.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../lib/javase-3.5.3.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
