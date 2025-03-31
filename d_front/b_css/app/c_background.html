@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .bgColor {
+      background-color: rgb(255, 0, 255);
+    }
+
+    .bgColor_content {
+      width: 300px;
+      color: white;
+      background-color: rgba(255, 0, 0, 0.3);
+    }
+
+    .bgImg {
+      width: 1024px;
+      height: 800px;
+      border: solid;
+      background-image: url("../assets/img/city1.PNG");
+
+      /* 이미지 비율이 깨지지 않는 선에서 가장 큰 크기*/
+      background-size: contain;
+      /* 배경 이미지가 요소의 영역을 덮도록 크기를 변경*/
+      /*background-size: cover;*/
+      background-repeat: no-repeat;
+      background-position: center;
+      background-blend-mode: hard-light;
+    }
+
+    .bgClip{
+      width: 300px;
+      height: 300px;
+      padding: 30px;
+      margin: 20px;
+      border: 20px dashed;
+      display: inline-block;
+    }
+
+    #bgClip1{
+      background-image: url("../assets/img/river1.PNG");
+      background-clip: content-box;
+    }
+
+    #bgClip2{
+      background-image: url("../assets/img/river1.PNG");
+      background-clip: padding-box;
+    }
+
+    #bgClip3{
+      background-image: url("../assets/img/river1.PNG");
+      background-clip: border-box;
+    }
+
+  </style>
+</head>
+<body>
+<h2>배경색, 배경이미지</h2>
+<pre>
+    background-color: 색상명|rgb|rgba|16진수
+    rgb : 0-255, 0-255, 0-255 값으로 색상을 표현
+    rgba : rgb + 투명도 (0~1)
+  </pre>
+<h3>배경 색상</h3>
+<div class="bgColor">
+  <p class="bgColor_content">배경색 적용</p>
+</div>
+
+<h3>배경 이미지</h3>
+<div class="bgImg">
+  배경 이미지 적용
+</div>
+
+<h3>배경 이미지 적용 범위</h3>
+<pre>
+  background-clip
+  content-box : 컨텐츠 영역에 적용
+  padding-box : padding 영역까지 적용
+  border-box : 외곽선 까지 적용
+</pre>
+
+  <div class="bgClip" id="bgClip1">
+    background-clip: content-box
+  </div>
+
+  <div class="bgClip" id="bgClip2">
+    background-clip: padding-box
+  </div>
+
+  <div class="bgClip" id="bgClip3">
+    background-clip: border-box
+  </div>
+
+
+
+
+
+
+</body>
+</html>

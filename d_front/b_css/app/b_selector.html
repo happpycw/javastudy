@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <style>
+    *{
+      color: red;
+    }
+
+    li{
+      color: lightcoral;
+    }
+
+    .cls{
+      background-color: lightyellow;
+    }
+
+    #attrSelector{
+      background-color: lightblue;
+    }
+
+    #idSelector{
+      background-color: lightblue;
+    }
+
+    #attr{
+      background-color: lightblue;
+    }
+
+    /*
+      !important : 가장 높은 우선순위를 부여
+    */
+    li[value="attr"]{
+      background-color: lightseagreen !important;
+    }
+
+    .cls:hover{
+      background-color: red;
+    }
+  </style>
+
+</head>
+<body>
+    <h2>CSS 선택자</h2>
+    <pre>
+      html 요소를 선택하기 위한 패턴
+      전체 선택자 : *
+      태그 선택자 : tag name
+      class 선택자 : .class name
+      아이디 선택자 : #id
+      속성 선택자 : tag[name=value]
+    </pre>
+
+    <h3>전체 선택자</h3>
+    <ul>
+      <li>테스트</li>
+      <li>테스트</li>
+      <li>테스트</li>
+    </ul>
+
+    <h3>태그 선택자</h3>
+    <ul>
+      <li>테스트</li>
+      <li>테스트</li>
+      <li>테스트</li>
+    </ul>
+
+    <h3>클래스 선택자</h3>
+    <ul class="cls">
+      <li>테스트</li>
+      <li>테스트</li>
+      <li>테스트</li>
+    </ul>
+
+    <h3>아이디 선택자</h3>
+    <ul class="cls" id="idSelector">
+      <li>테스트</li>
+      <li>테스트</li>
+      <li>테스트</li>
+    </ul>
+
+    <h3>속성 선택자</h3>
+    <ul class="cls" id="attrSelector">
+      <li>테스트</li>
+      <li>테스트</li>
+      <li id="attr" value="attr">테스트</li>
+    </ul>
+
+</body>
+</html>

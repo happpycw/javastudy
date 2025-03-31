@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--
+    css 단위:
+    절대길이 : px, pt, cm, mm
+    상대길이 : vw, vh, vmax, em, ex, rem
+
+    vw : viewport(사용자에게 보여지는 영역) width 를 기준으로 하는 단위
+         1vw : viewport width 의 1%
+    vh : viewport(사용자에게 보여지는 영역) height 를 기준으로 하는 단위
+         1vh : viewport height 의 1%
+    vmax : viewport(사용자에게 보여지는 영역) 의 width와 height 중 큰 값을 기준으로 하는 단위
+         1vmax : viewport height|weight 의 1%
+    em (equal m) : 상위 요소 폰트의 'm' 크기를 기준으로 하는 단위
+    ex (equal x) : 상위 요소 폰트의 'x' 크기를 기준으로 하는 단위
+    rem (root equal m) : root 요소(html tag) 의 'm' 크기를 기준으로 하는 단위
+
+-->
+  <style>
+    p{
+      /*font-size: 3vmax;*/
+      /*font-style: italic;*/
+      /*line-height: 1;*/
+      /*font-variant: small-caps;*/
+      /*font: [style variant weight] size/line-height family */
+
+      font: italic small-caps 900 5vw/1.5 "궁서";
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>
+      CSS Font 속성 <br>
+      CSS Font 속성
+    </p>
+  </div>
+</body>
+</html>
