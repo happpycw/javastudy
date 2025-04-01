@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75542725-0934-4897-b727-5df2e8473b07" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../a_basic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a_basic/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +40,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/backend/d_front/a_front/a_html",
+    "last_opened_file_path": "C:/backend/d_front/b_css",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,6 +102,7 @@
       <workItem from="1743331030946" duration="2000" />
       <workItem from="1743331036224" duration="37000" />
       <workItem from="1743379376225" duration="79000" />
+      <workItem from="1743468471831" duration="1935000" />
     </task>
     <servers />
   </component>
