@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="./assets/css/button.css" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .note{
+      border: thin solid;
+      min-height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>DOM</h1>
+<h2>textNode 가 없는 element 추가 삭제</h2>
+<div id="note1" class="note">
+
+</div>
+<button class="btn btn-red btn-m" id="btnAdd">add</button>
+<button class="btn btn-green btn-m" id="btnRemove">remove</button>
+<!--
+  event : 프로그램에서 일어나는 사건
+    사용자 이벤트 : 클릭, 드래그, 키보드 입력, 마이크 입력...
+    컴퓨터 이벤트 : 통신에 대한 응답이 도착, 예외 발생, 화면 렌더링이 완료
+-->
+<script>
+  const btnAdd = document.querySelector('#btnAdd');
+  const btnRemove = document.querySelector("#btnRemove");
+  const note1 = document.querySelector('#note1');
+
+  btnAdd.addEventListener('click', ev => {
+    const imgElement = document.createElement('img');
+    imgElement.src='./assets/img/html.jpg';
+    note1.appendChild(imgElement);
+  });
+
+  btnRemove.addEventListener('click', ev => {
+    const btns = Array.from(note1.childNodes);
+    console.dir(btns);
+    note1.removeChild(btns[0]);
+  });
+</script>
+
+<h2>텍스트노드가 있는 element 를 추가 삭제</h2>
+<div id="note2" class="note"></div>
+<button class="btn btn-red btn-m" id="btnTextAdd">add</button>
+<button class="btn btn-green btn-m" id="btnTextRemove">remove</button>
+
+<script>
+  const btnTextAdd = document.querySelector('#btnTextAdd');
+  const btnTextRemove = document.querySelector('#btnTextRemove');
+  const note2 = document.querySelector('#note2');
+
+  btnTextAdd.addEventListener('click', ev => {
+    const h4Element = document.createElement('h4');
+    const textNode = document.createTextNode('반가워 DOM');
+    h4Element.appendChild(textNode);
+    note2.appendChild(h4Element);
+  });
+
+  btnTextRemove.addEventListener('click', ev => {
+    const btns = Array.from(note2.childNodes);
+    console.dir(btns);
+    note2.removeChild(btns[0]);
+  });
+</script>
+
+<h2>element 복제</h2>
+<div class="row" id="note3"></div>
+<button class="btn btn-red btn-m" id="btnClone">clone</button>
+<button class="btn btn-green btn-m" id="btnCloneRemove">remove</button>
+
+<div style="display: none" id="cardTemplate">
+    <div class="col s4">
+      <div class="card card small">
+        <div class="card-image">
+          <img src="./assets/img/flower2.PNG">
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const btnClone = document.querySelector('#btnClone');
+  const note3 = document.querySelector('#note3');
+  let cnt = 0;
+
+  btnClone.addEventListener('click', ev => {
+    const cardTemplate = document.querySelector('#cardTemplate');
+    const clone = cardTemplate.firstElementChild.cloneNode(true);
+    const cardTitle = clone.querySelector('.card-title');
+    const cardContent = clone.querySelector('.card-content');
+    cardTitle.textContent = 'Card ' + ++cnt;
+    cardContent.textContent = '복제된 Element 입니다!! ' + cnt;
+    note3.appendChild(clone);
+  });
+
+
+</script>
+
+
+</body>
+</html>
+    
+    
+    

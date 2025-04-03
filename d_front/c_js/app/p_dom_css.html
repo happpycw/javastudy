@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="./assets/css/button.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <h1>JS 를 사용해 CSS 조작</h1>
+  <div class="wrap">
+    <button class="btn btn-m btn-blue" id="btnBlue">blue</button>
+    <button class="btn btn-m btn-green" id="btnGreen">green</button>
+    <button class="btn btn-m btn-red" id="btnRed">red</button>
+  </div>
+
+  <script>
+    const btns = document.querySelectorAll('.btn');
+    btns.forEach( e => {
+      e.style.transform = 'rotate(0turn)';
+      e.addEventListener('mouseover', ev => {
+        // element 객체의 style 속성으로 css 를 제어할 수 있다.
+        // kebab-case(두 단어를 - 연결) 를 camelCase 로 변경
+        // ex) background-color => backgroundColor
+        const target = ev.target;
+        target.style.backgroundColor = 'red';
+        target.style.transform = 'rotate(20turn)';
+        target.style.transitionDuration = '2s';
+        target.style.borderRadius = '50px';
+      })
+
+      e.addEventListener('mouseout', ev => {
+        const target = ev.target;
+        target.style.backgroundColor = null;
+        target.style.borderRadius = null;
+        target.style.transform = 'rotate(0turn)';
+      });
+    });
+  </script>
+
+  <div class="wrap2">
+    <button class="btn btn-m btn-blue" id="btnBlue2">blue</button>
+    <button class="btn btn-m btn-green" id="btnGreen2">green</button>
+    <button class="btn btn-m btn-red" id="btnRed2">red</button>
+  </div>
+
+  <script>
+    const wrap2 = document.querySelector('.wrap2');
+    const btns2 = wrap2.querySelectorAll('.btn');
+    btns2.forEach(e => {
+      e.addEventListener('mouseover', ev => {
+        const target = ev.target;
+        target.classList.replace('btn-m','btn-l');
+      });
+
+      e.addEventListener('mouseout', ev => {
+        const target = ev.target;
+        target.classList.replace('btn-l','btn-m');
+      });
+    })
+  </script>
+
+
+</body>
+</html>
+    
+    
+    

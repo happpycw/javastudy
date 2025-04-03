@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>this</h1>
+<script>
+  // 1. 전역에서 this 를 호출할 경우 전역객체(window, global)를 가리킨다.
+  console.log(this);
+
+  // 2. 함수 안에서 this : 전역객체
+  function a () {
+    console.log('function this', this);
+  }
+
+  a();
+
+  // 3. 메서드 this, 객체
+  const aClass = {
+    who: 'aClass',
+    info: function(){
+      console.log(this);
+    }
+  }
+
+  aClass.info();
+
+  // 4. 생성자 함수 this
+  function Info(obj){
+    this.__proto__ = obj;
+    this.kor = 100;
+    this.math = 95;
+    console.log(this);
+  }
+
+  const info = new Info(aClass);
+  console.log(info.who);
+
+  // 5. 화살표 함수 this
+  // 화살표함수의 this 는 상위 scope 의 this 를 따라간다.
+  // 명시적 this 바인딩, 메서드를 사용할 때는 화살표함수를 사용하지 않는다.
+  // this 가 상위스코프의 this 를 바라보기 때문.
+  const arrowThis = {
+    age : 15,
+    title : 'hello',
+    test : function(){
+      console.dir(this);
+      const that = this;
+
+      // const inner = function(this){
+      //   console.log(this);
+      //   console.log(`${this.age}, ${this.title}`)
+      // }
+
+      const inner = () => {
+        console.log(this);
+        console.log(`${this.age}, ${this.title}`)
+      }
+      inner();
+    }
+  }
+
+  arrowThis.test();
+
+  // 6. 명시적 this 바인딩
+  const changeWho = function(who){
+    console.dir(this);
+    this.who = who;
+  }
+
+  console.dir(aClass.who);
+  console.dir(changeWho);
+  changeWho.call(aClass, 'ssid');
+  console.dir(aClass);
+
+</script>
+</body>
+</html>
+    
+    
+    

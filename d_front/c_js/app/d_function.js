@@ -43,5 +43,40 @@ console.dir(rf)
 rf();
 rf();
 
+console.log('==================================');
+// 즉시실행함수 IIFE
+// 함수의 선언과 동시에 실행
+(function iife(){
+  console.log('선언과 동시에 실행')
+})();
+
+// 람다
+// (arg...) => {};
+// 1. 매개변수가 1개라면 매개변수 선언부의 괄호 생략
+// 2. 코드블록에 return 문 만 있다면 함수 body 의 {} 생략 가능
+let arr = [
+    '감자', '고구마', '옥수수'
+];
+
+arr.forEach(e => {
+  console.log(e)
+});
+
+arr.forEach((e, idx, arr) => {
+  console.log(e);
+  console.log(idx);
+  console.log(arr)
+});
+
+const argFunction = (t,s,u) => {
+  console.log(t);
+}
+
+argFunction('hi',1,2,3,4,5,6,7,8,9,0,10,11,12,13,14,15,165);
+
+
+
+
+
 
 
