@@ -10,7 +10,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style>
-    .note{
+    .note {
       border: thin solid;
       min-height: 100px;
     }
@@ -37,7 +37,7 @@
 
   btnAdd.addEventListener('click', ev => {
     const imgElement = document.createElement('img');
-    imgElement.src='./assets/img/html.jpg';
+    imgElement.src = './assets/img/html.jpg';
     note1.appendChild(imgElement);
   });
 
@@ -78,22 +78,22 @@
 <button class="btn btn-green btn-m" id="btnCloneRemove">remove</button>
 
 <div style="display: none" id="cardTemplate">
-    <div class="col s4">
-      <div class="card card small">
-        <div class="card-image">
-          <img src="./assets/img/flower2.PNG">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
+  <div class="col s4">
+    <div class="card card small">
+      <div class="card-image">
+        <img src="./assets/img/flower2.PNG">
+        <span class="card-title">Card Title</span>
+      </div>
+      <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
       </div>
     </div>
   </div>
+</div>
 
 <script>
   const btnClone = document.querySelector('#btnClone');
