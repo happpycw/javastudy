@@ -1,2 +1,6 @@
-package templatecallback;public interface Measurable {
+package templatecallback;
+
+@FunctionalInterface
+public interface Measurable {
+    void measure();
 }
