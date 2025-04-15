@@ -5,10 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        alert('<c:out value="${requestScope.message}"/>');
-        location.href = '/';
-    </script>
+<script>
+  alert('<c:out value="${requestScope.message}"/>');
+  location.href = '/';
+</script>
 
 </body>
 </html>

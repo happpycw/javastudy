@@ -10,13 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba92b22e-5fa2-4a2d-8345-ba8762662edc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../spring-mybatis/src/main/java/com/grepp/spring/infra/config/DBConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-mybatis/src/main/resources/init/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-mybatis/src/main/resources/init/empty-data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-mybatis/src/main/resources/init/empty-schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-mybatis/src/main/resources/init/schema-prod.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-mybatis/src/main/resources/init/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core/src/main/java/b_inject/a_autowired/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core/src/main/java/b_inject/a_autowired/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core/src/main/java/b_inject/a_autowired/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core/src/main/java/b_inject/a_autowired/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core/src/main/java/b_inject/a_autowired/TransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core/src/main/java/b_inject/a_autowired/TransactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core/src/main/java/b_inject/b_constructor/JdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core/src/main/java/b_inject/b_constructor/JdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core/src/main/java/b_inject/b_constructor/TransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core/src/main/java/b_inject/b_constructor/TransactionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grepp/spring/app/controller/api/RestApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grepp/spring/app/controller/api/RestApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grepp/spring/app/controller/api/multipart/MultipartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grepp/spring/app/controller/api/multipart/MultipartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grepp/spring/app/controller/web/urlencoded/UrlEncodedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grepp/spring/app/controller/web/urlencoded/UrlEncodedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grepp/spring/app/model/error/ErrorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grepp/spring/app/model/error/ErrorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grepp/spring/app/model/multipart/MultipartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grepp/spring/app/model/multipart/MultipartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grepp/spring/infra/error/RestApiExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grepp/spring/infra/error/RestApiExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grepp/spring/infra/error/WebExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grepp/spring/infra/error/WebExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grepp/spring/infra/error/exceptions/CommonException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grepp/spring/infra/error/exceptions/CommonException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grepp/spring/infra/error/exceptions/RestApiException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grepp/spring/infra/error/exceptions/WebException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grepp/spring/infra/util/file/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grepp/spring/infra/util/file/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/error/redirect.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/error/redirect.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,14 +85,13 @@
     "Maven.spring [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
     "Maven.spring [package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TomEE Server.spring.executor": "Run",
     "Tomcat Server.Tomcat 10.1.39.executor": "Run",
     "Tomcat Server.Unnamed.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/backend/f_spring/spring-mvc",
+    "last_opened_file_path": "C:/backend/f_spring/spring-mvc/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -195,8 +210,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.39" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.39" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19416.15" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19416.15" />
       </set>
     </attachedChunks>
   </component>
@@ -223,9 +238,6 @@
       <workItem from="1744302440249" duration="218000" />
       <workItem from="1744329325011" duration="15999000" />
       <workItem from="1744348553804" duration="1791000" />
-      <workItem from="1744351266818" duration="19000" />
-      <workItem from="1744357416949" duration="99000" />
-      <workItem from="1744358236199" duration="4108000" />
     </task>
     <servers />
   </component>

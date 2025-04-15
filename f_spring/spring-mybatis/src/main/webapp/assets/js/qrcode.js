@@ -5,10 +5,10 @@ import geoApi from "./module/geolocation.js";
 (async () => {
 
   const results = await Promise.allSettled([geoApi(), getToken()]);
-  const [{value:coords}, {value:token}] = results;
+  const [{value: coords}, {value: token}] = results;
   const {
-    main:{temp},
-    weather:[{main:info}]
+    main: {temp},
+    weather: [{main: info}]
   } = await weatherApi(coords);
 
   const weather = document.querySelector('#weather');
