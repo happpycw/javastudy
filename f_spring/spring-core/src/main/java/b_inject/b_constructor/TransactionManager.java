@@ -16,12 +16,4 @@ public class TransactionManager {
         this.jdbcProperties = jdbcProperties;
         this.jdbcTemplate = jdbcTemplate;
     }
-    
-    @Override
-    public String toString() {
-        return "TransactionManager{" +
-                   "jdbcProperties=" + jdbcProperties +
-                   ", jdbcTemplate=" + jdbcTemplate +
-                   '}';
-    }
 }

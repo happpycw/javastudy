@@ -13,11 +13,11 @@ public class Run {
         
         TransactionManager transactionManager =
             context.getBean("transactionManager", TransactionManager.class);
-        //System.out.println(transactionManager);
+        System.out.println(transactionManager);
         
         JdbcTemplate jdbcTemplate =
             context.getBean("jdbcTemplate", JdbcTemplate.class);
         
-        //System.out.println(jdbcTemplate);
+        System.out.println(jdbcTemplate);
     }
 }

@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74bcf7d0-3212-407c-9a14-4227d134aee8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_aop/a_interceptor/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_aop/a_interceptor/Developer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_aop/a_interceptor/Man.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_aop/a_interceptor/Run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_aop/a_interceptor/Woman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_aop/a_interceptor/_Advice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_aop/b_autoproxy/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_aop/b_autoproxy/Man.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_aop/b_autoproxy/Run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_aop/b_autoproxy/Woman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/d_aop/b_autoproxy/_Aspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/aop/autoproxy/application-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/aop/interceptor/application-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-mvc/.idea/artifacts/unnamed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/b_inject/a_autowired/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/b_inject/a_autowired/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/b_inject/a_autowired/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/b_inject/a_autowired/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/b_inject/a_autowired/TransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/b_inject/a_autowired/TransactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/b_inject/b_constructor/JdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/b_inject/b_constructor/JdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/b_inject/b_constructor/TransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/b_inject/b_constructor/TransactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-mvc/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +48,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Run.executor": "Run",
+    "Application.a_regist.a_xml.bean.Run.executor": "Run",
     "Application.a_regist.a_xml.cheatsheet.Run.executor": "Run",
     "Application.a_regist.b_annotation.component.Run.executor": "Run",
     "Application.a_regist.b_annotation.configuration.Run.executor": "Run",
@@ -73,7 +68,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "fileTemplates",
@@ -100,13 +95,13 @@
       <recent name="a_regist.b_annotation" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.d_aop.b_autoproxy.Run">
-    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="c_el.Run" />
+  <component name="RunManager" selected="Application.d_aop.a_interceptor.Run">
+    <configuration name="a_regist.a_xml.bean.Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="a_regist.a_xml.bean.Run" />
       <module name="spring-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="c_el.*" />
+          <option name="PATTERN" value="a_regist.a_xml.bean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.d_aop.b_autoproxy.Run" />
         <item itemvalue="Application.d_aop.a_interceptor.Run" />
-        <item itemvalue="Application.Run" />
-        <item itemvalue="Application.b_inject.b_constructor.Run" />
         <item itemvalue="Application.b_inject.a_autowired.Run" />
+        <item itemvalue="Application.b_inject.b_constructor.Run" />
+        <item itemvalue="Application.a_regist.a_xml.bean.Run" />
+        <item itemvalue="Application.d_aop.b_autoproxy.Run" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +193,8 @@
       <workItem from="1744119975651" duration="348000" />
       <workItem from="1744156724563" duration="3440000" />
       <workItem from="1744160259464" duration="7069000" />
-      <workItem from="1744168318269" duration="5772000" />
+      <workItem from="1744168318269" duration="6599000" />
+      <workItem from="1744183909159" duration="1865000" />
     </task>
     <servers />
   </component>

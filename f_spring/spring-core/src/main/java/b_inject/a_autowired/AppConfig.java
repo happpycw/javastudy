@@ -22,5 +22,5 @@ public class AppConfig {
         properties.setProperty("user","oracleBm");
         return new JdbcProperties(properties);
     }
-    
+
 }
