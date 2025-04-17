@@ -47,7 +47,7 @@ public class RestApiExceptionAdvice {
     }
     
     @ExceptionHandler(AuthorizationDeniedException.class)
-    public ResponseEntity<ApiResponse<String>>  authorizationDeniedHandler(AuthorizationDeniedException ex, Model model){
+    public ResponseEntity<ApiResponse<String>> authorizationDeniedHandler(AuthorizationDeniedException ex, Model model){
         return ResponseEntity
                    .status(HttpStatus.UNAUTHORIZED)
                    .body(ApiResponse.error(ResponseCode.UNAUTHORIZED));
