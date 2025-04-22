@@ -8,16 +8,16 @@ public class JpaTemplate {
 
     private static EntityManagerFactory emf;
     private static JpaTemplate instance;
-
+    
     public static JpaTemplate getInstance(){
-        if (instance == null){
+        if(instance == null){
             emf = Persistence.createEntityManagerFactory("bookmanager");
             instance = new JpaTemplate();
-
         }
-        return  instance;
+        
+        return instance;
     }
-
+    
     public EntityManager createEntityManager(){
         return emf.createEntityManager();
     }

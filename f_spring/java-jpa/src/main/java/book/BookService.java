@@ -5,23 +5,21 @@ import jakarta.persistence.EntityTransaction;
 import jpa.JpaTemplate;
 
 public class BookService {
-
+    
     private final JpaTemplate jpaTemplate = JpaTemplate.getInstance();
-
-    public void add(Book book) {
+    public void add(Book book){
         EntityManager em = jpaTemplate.createEntityManager();
         EntityTransaction tx = em.getTransaction();
-
-        try {
+        
+        try{
             tx.begin();
             em.persist(book);
             tx.commit();
-        } catch (Exception e) {
+        }catch (Exception e){
             tx.rollback();
-        }
-        finally {
+        }finally {
             em.close();
         }
-
     }
+    
 }
